@@ -3,7 +3,23 @@ const letter = document.getElementById("letter");
 const surpriseButton = document.getElementById("surpriseButton");
 const finalMessage = document.getElementById("finalMessage");
 
+const envelope = document.getElementById("envelope");
+
 openButton.addEventListener("click", () => {
+
+    envelope.classList.add("open");
+
+    setTimeout(() => {
+
+        document.getElementById("letter").classList.remove("hidden");
+
+        document.getElementById("letter").scrollIntoView({
+            behavior:"smooth"
+        });
+
+    },800);
+
+});
   letter.classList.remove("hidden");
   letter.scrollIntoView({
     behavior: "smooth"
