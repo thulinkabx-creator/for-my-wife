@@ -143,3 +143,38 @@ behavior:"smooth"
 };
 
 }
+// Click to enlarge photos
+
+document.querySelectorAll(".photos img").forEach(photo=>{
+
+photo.addEventListener("click",()=>{
+
+const overlay=document.createElement("div");
+
+overlay.style.position="fixed";
+overlay.style.top="0";
+overlay.style.left="0";
+overlay.style.width="100%";
+overlay.style.height="100%";
+overlay.style.background="rgba(0,0,0,.9)";
+overlay.style.display="flex";
+overlay.style.justifyContent="center";
+overlay.style.alignItems="center";
+overlay.style.zIndex="9999";
+
+const img=document.createElement("img");
+
+img.src=photo.src;
+img.style.maxWidth="90%";
+img.style.maxHeight="90%";
+img.style.borderRadius="20px";
+
+overlay.appendChild(img);
+
+overlay.onclick=()=>overlay.remove();
+
+document.body.appendChild(overlay);
+
+});
+
+});
