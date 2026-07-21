@@ -70,3 +70,59 @@ function createHeart() {
 }
 
 let heartsStarted = false;
+const letter = `
+
+My Wife,
+
+If you're reading this, thank you for taking a moment to open something I made just for you.
+
+This isn't just a website.
+
+It's every memory.
+Every laugh.
+Every tear.
+Every prayer.
+Every dream.
+
+You have become one of the greatest chapters of my life.
+
+If tomorrow asked me to start over...
+I'd still look for you.
+
+I'd still choose you.
+
+I'd still fall in love with you.
+
+Thank you for loving me.
+Thank you for believing in me.
+Thank you for existing.
+
+Forever yours.
+
+❤️
+
+`;
+
+const letterElement = document.getElementById("letter");
+
+if(letterElement){
+
+let i = 0;
+
+function typeLetter(){
+
+if(i < letter.length){
+
+letterElement.innerHTML += letter.charAt(i);
+
+i++;
+
+setTimeout(typeLetter,35);
+
+}
+
+}
+
+typeLetter();
+
+}
