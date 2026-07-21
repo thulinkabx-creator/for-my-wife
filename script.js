@@ -19,7 +19,6 @@ openButton.addEventListener("click", () => {
 
     },800);
 
-});
 
 
 surpriseButton.addEventListener("click", () => {
