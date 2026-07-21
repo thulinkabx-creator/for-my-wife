@@ -247,3 +247,11 @@ transform:translateY(0);
 }
 
 }
+#playSong{
+margin-top:15px;
+background:#6c4cff;
+}
+
+#playSong:hover{
+background:#7d61ff;
+}
