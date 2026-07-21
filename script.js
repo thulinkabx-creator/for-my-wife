@@ -20,11 +20,7 @@ openButton.addEventListener("click", () => {
     },800);
 
 });
-  letter.classList.remove("hidden");
-  letter.scrollIntoView({
-    behavior: "smooth"
-  });
-});
+
 
 surpriseButton.addEventListener("click", () => {
   if (!heartsStarted) {
