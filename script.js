@@ -203,21 +203,11 @@ window.open(
 };
 
 }
-window.addEventListener("load", () => {
+const loader = document.getElementById("loader");
 
-setTimeout(() => {
-
-
-loader.style.opacity = "0";
-
-setTimeout(() => {
-
-
-},1000);
-
-},2000);
-
-});
+if (loader) {
+    loader.style.display = "none";
+}
 const photos = document.querySelectorAll(".photos img");
 
 photos.forEach(photo => {
