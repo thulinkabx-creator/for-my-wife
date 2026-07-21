@@ -182,3 +182,57 @@ width:100%;
 border-radius:20px;
 margin-bottom:20px;
 }
+@keyframes glow{
+
+0%{
+box-shadow:0 0 10px #ff4f87;
+}
+
+50%{
+box-shadow:0 0 35px #ff4f87;
+}
+
+100%{
+box-shadow:0 0 10px #ff4f87;
+}
+
+}
+
+button{
+
+animation:glow 2s infinite;
+
+}
+.photos img{
+
+opacity:0;
+
+animation:fadePhoto 1.2s forwards;
+
+}
+
+.photos img:nth-child(1){animation-delay:.3s;}
+.photos img:nth-child(2){animation-delay:.6s;}
+.photos img:nth-child(3){animation-delay:.9s;}
+.photos img:nth-child(4){animation-delay:1.2s;}
+.photos img:nth-child(5){animation-delay:1.5s;}
+
+@keyframes fadePhoto{
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
