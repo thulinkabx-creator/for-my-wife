@@ -129,7 +129,18 @@ transition:.4s;
 
 .photos img:hover{
 transform:scale(1.05) rotate(2deg);
+}.photos img{
+cursor:pointer;
 }
+
+.photos img:active{
+transform:scale(.95);
+}
+
+.photos{
+padding:20px;
+}
+
 .floating-heart{
 position:fixed;
 bottom:-40px;
