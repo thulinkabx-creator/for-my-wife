@@ -178,3 +178,17 @@ document.body.appendChild(overlay);
 });
 
 });
+const playSong = document.getElementById("playSong");
+
+if(playSong){
+
+playSong.onclick = () => {
+
+window.open(
+"https://www.youtube.com/results?search_query=Sade+By+Your+Side",
+"_blank"
+);
+
+};
+
+}
