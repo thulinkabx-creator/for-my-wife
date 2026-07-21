@@ -11,6 +11,10 @@ openButton.addEventListener("click", () => {
 });
 
 surpriseButton.addEventListener("click", () => {
+  if (!heartsStarted) {
+    heartsStarted = true;
+    setInterval(createHeart, 500);
+}
   finalMessage.classList.remove("hidden");
 
   finalMessage.scrollIntoView({
@@ -65,4 +69,4 @@ function createHeart() {
     }, 6000);
 }
 
-setInterval(createHeart, 500);
+let heartsStarted = false;
