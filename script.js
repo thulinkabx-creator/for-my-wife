@@ -103,7 +103,7 @@ Forever yours.
 
 `;
 
-const letterElement = document.getElementById("letter");
+const letterElement = document.getElementById("letterText");
 
 if(letterElement){
 
