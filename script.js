@@ -70,7 +70,7 @@ function createHeart() {
 }
 
 let heartsStarted = false;
-const letter = `
+const letterText = `
 
 My Wife,
 
@@ -111,9 +111,9 @@ let i = 0;
 
 function typeLetter(){
 
-if(i < letter.length){
+if(i < letterText.length){
 
-letterElement.innerHTML += letter.charAt(i);
+letterElement.innerHTML += letterText.charAt(i);
 
 i++;
 
