@@ -126,3 +126,20 @@ setTimeout(typeLetter,35);
 typeLetter();
 
 }
+const foreverButton = document.getElementById("foreverButton");
+const finalCard = document.getElementById("finalCard");
+
+if(foreverButton){
+
+foreverButton.onclick = ()=>{
+
+finalCard.classList.remove("hidden");
+
+window.scrollTo({
+top:document.body.scrollHeight,
+behavior:"smooth"
+});
+
+};
+
+}
