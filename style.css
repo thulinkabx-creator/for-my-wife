@@ -311,3 +311,13 @@ margin-bottom:15px;
 font-size:18px;
 opacity:.8;
 }
+.hidden-photo{
+opacity:0;
+transform:translateY(40px);
+transition:all .8s ease;
+}
+
+.hidden-photo.show{
+opacity:1;
+transform:translateY(0);
+}
