@@ -209,3 +209,20 @@ loader.style.display = "none";
 },2000);
 
 });
+const photos = document.querySelectorAll(".photos img");
+
+photos.forEach(photo => {
+    photo.classList.add("hidden-photo");
+});
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+    });
+},{
+    threshold:0.2
+});
+
+photos.forEach(photo => observer.observe(photo));
